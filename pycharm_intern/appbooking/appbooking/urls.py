@@ -27,18 +27,16 @@ urlpatterns = [
     path('adminhome/',AdminHome,name='adminhome'),
     path('adminlogout/',Logout_admin,name='adminlogout'),
     path('adminaddDoctor/',adminaddDoctor,name='adminaddDoctor'),
-#    path('adminviewDoctor/',adminviewDoctor,name='adminviewDoctor'),
-#    path('adminDeleteDoctor<int:pid>,<str:email>',admin_delete_doctor,name='admin_delete_doctor'),
-#    path('adminaddReceptionist/',adminaddReceptionist,name='adminaddreceptionist'),
-#    path('adminviewReceptionist/',adminviewReceptionist,name='adminviewReceptionist'),
+    path('adminviewDoctor/',adminviewDoctor,name='adminviewDoctor'),
+    path('adminDeleteDoctor<int:pid>,<str:email>',admin_delete_doctor,name='admin_delete_doctor'),
+    path('adminaddReceptionist/',adminaddReceptionist,name='adminaddreceptionist'),
+    path('adminviewReceptionist/',adminviewReceptionist,name='adminviewReceptionist'),
     path('adminDeleteReceptionist<int:pid>,<str:email>',admin_delete_receptionist,name='admin_delete_receptionist'),
     path('adminviewAppointment/',adminviewAppointment,name='adminviewAppointment'),
     path('home/',Home,name='home'),
     path('profile/',profile,name='profile'),
     path('makeappointments/',MakeAppointments,name='makeappointments'),
     path('viewappointments/',viewappointments,name='viewappointments'),
-#    path('patientDeleteAppointment<int:pid>',patient_delete_appointment,name='patient_delete_appointment'),
+    path('patientDeleteAppointment<int:pid>',patient_delete_appointment,name='patient_delete_appointment'),
     path('logout/',Logout,name='logout'),
 ]
-#
-
